@@ -12,7 +12,10 @@ body {
 }
 
 .robot-container {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: #300000;
@@ -34,15 +37,73 @@ body {
 }
 
 .robot-eye-left {
+  --b: 35px;
+  --s: 40px;
+  --c: #000000;
+  /*height in em here*/
+  height: 6.25em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid var(--c);
+  box-sizing: border-box;
+  --g:conic-gradient(var(--c) 0 0) no-repeat 50%/;
+  background: 
+    var(--g) var(--b) calc(100% - 2*var(--s)),
+    var(--g) calc(100% - 2*var(--s)) var(--b);
+  rotate: 45deg; /*Nicholas stated that he knows about rotate effecting a background values in the video where this assignment was returned and not accepted.*/
+
+  position: absolute;
+  top: 25%;
+  left: 10%;
+/*opacity here*/
+  opacity: 50%;
 }
 
 .robot-eye-right {
+   border: 5px solid black;
+  height: 0;
+  /*width as a percentage*/
+  width: 15%;
+  padding-bottom: 15%;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  rotate: 45deg; /*Nicholas stated that he knows about rotate effecting a background values in the video where this assignment was returned and not accepted.*/
+  /*background image here*/
+  background-image: url("https://i.pinimg.com/736x/60/17/9c/60179cb0c00b730fab8fc3ae3cd0c3da.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.ears {
+  position: absolute;
+  height: 175px;
+  width: 125px;
 }
 
 .robot-ear-left {
+  border: 5px solid red;
+  background-color: red;
+  border-radius: 50%;
+  right: 280px;
+  top: 300px;
+  left: -275px;
+  /*bottom: 300px;*/
+  margin: 0 auto;
+  /*same shape here as the other ear but different orientation*/
+  rotate: 45deg; /*Nicholas stated that he knows about rotate effecting a background values in the video where this assignment was returned and not accepted.*/
 }
 
 .robot-ear-right {
+  border: 5px solid red;
+  border-radius: 50%;
+  top: 300px;
+  left: 760px;
+  /*bottom: 10px;*/
+  right: 25px;
+  margin: 0 auto;
+  /*solid background color here*/
+  background-color: aqua;
 }
 
 .robot-nose {
