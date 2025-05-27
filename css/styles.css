@@ -4,22 +4,16 @@ body {
 
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
-.robot-container {
+/* .robot-container, * { 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   z-index: -2;
-}
+} */
 
 .robot-container {
-  /* position: relative; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
-  /* background-color: #300000; */
-  /* border: 5px solid #af0000; */
 }
 
 .robot-face-shape {
@@ -116,11 +110,11 @@ body {
   left: 35%;
 }
 
-.robot-nose:before {
+/* .robot-nose:before {
 }
 
 .robot-nose:after {
-}
+} */
 
 .robot-teeth {
   --c: 66;
@@ -206,5 +200,6 @@ left: 625px;
 }
 
 .hair {
-  background: linear-gradient(to right, rgb(113, 113, 113), #000000)
+  /* background: linear-gradient(to right, rgb(113, 113, 113), #000000) */
+  border: 2px grey solid;
 }
